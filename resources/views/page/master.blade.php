@@ -78,7 +78,7 @@
 
                     <!-- <span class="glyphicon glyphicon-log-out"></span><a id="logout" href="{{route('out')}}">LogOut</a>-->
                     </div>
-                    <li style="border: solid #d5d5d5 ;width: 1px; height: 35px; margin-top: 5px; margin-left: 5px;margin-right: 5px"></li>
+
                     <div class="giohang dropdown" style="margin-top: 3px">
                         <span class="dropdown-toggle" data-toggle="dropdown"><a style="color: whitesmoke !important;" href="#"><i class="fas fa-cart-arrow-down fa-lg"></i></a></span>
                         <ul class="dropdown-menu list-in-cart" style="background: white;">

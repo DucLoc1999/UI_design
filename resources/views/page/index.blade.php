@@ -64,7 +64,7 @@
                 @if(asset($pro))
                     <div class="col-sm-3 product-price">
                         <div class="single-item">
-                            <div class="single-item-header product-img" style="margin-top: 20px">
+                            <div class="single-item-header product-img" style="margin-top: 10px">
                                 <a href="{{route('details',[$pro->id_type,$pro->id])}}"><img  class="img-fluid newproduct" src="img/product/{{$pro->image}}" alt="{{$pro->name}}"></a>
                             </div>
                             <div class="body" >
@@ -82,7 +82,7 @@
                                 @endif
 
                             </div>
-                            <div class="caption" style="margin-top:10px">
+                            <div class="caption">
                                 <a class="shopping shop"  href="{{route('cart',$pro->id)}}"><i class="fas fa-cart-plus"></i></a>
                                 <a class="shopping pay"   href="{{route('details',[$pro->id_type,$pro->id])}}">Chi tiết<i class="fa fa-chevron-right"></i></a>
                                 @if(\Illuminate\Support\Facades\Auth::id() == 1)
@@ -126,7 +126,7 @@
                                 </p>
                             @endif
                         </div>
-                        <div class="caption" style="margin-top: 10px">
+                        <div class="caption">
                             <a class="shopping shop"  href="{{route('cart',$sp->id)}}"><i class="fas fa-cart-plus"></i></a>
 
                             <a class="shopping pay"   href="{{route('details',[$sp->id_type,$sp->id])}}">Chi tiết<i class="fa fa-chevron-right"></i></a>

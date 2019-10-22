@@ -177,7 +177,7 @@ a:active {
 .product-img {
     height: 250px;
     width: 250px;
-    margin: 15px 9px 0px 9px;
+    margin: 10px 10px 0px 10px;
     text-align: center;
 }
 .product-img a {
@@ -187,7 +187,7 @@ a:active {
 }
 .single-item {
     background: white;
-    height: 390px;
+    /*height: 375px;*/
     max-width: 270px;
     padding-top: 1px;
 }
@@ -200,13 +200,16 @@ a:active {
 }
 .body{
     /*margin-left: 20%;*/
-    margin-left: 10px;
+    padding: 0px 10px;
 }
 .caption{
-    margin-left: 9px;
-    margin-top: 20px !important;
+    padding: 15px 10px;
 }
 element.style {
     background-color: white;
     height: 125px;
+}
+.single-item-header {
+    width: 250px;
+    height: 250px;
 }

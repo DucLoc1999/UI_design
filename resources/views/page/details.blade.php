@@ -12,7 +12,7 @@
 @section('content')
     <div class="container-fluid" style="padding: 15px; background: whitesmoke;">
         <div  style="margin-top: 5px;"><!--class="row"-->
-            <div class="col-sm-3" style="width: 440px; padding: 0px 20px;margin-top: 20px">
+            <div class="col-sm-3" style="width: 440px; padding: 15px 20px; margin: 0px;">
                 <ul class="list-group" style="">
                     @foreach($type_product as $sp)
                         @if($sp->id != $product[0]['id'])
@@ -51,14 +51,17 @@
                     </div>
                 </ul>
             </div>
-            <div class="col-sm-8 detail" style="background-color: whitesmoke;padding: 45px; ">
-                <div class="col-sm-4" style="margin-top: -20px;margin-left: 10%">
-                    <div class="single-item-header">
-                        <a href="#"><img style="height: 300px;width: 400px"  class="img-fluid" src="/img/product/{{$product[0]['image']}}" alt=""></a>
+            <div class="col-sm-8 detail" style="background-color: whitesmoke; padding: 15px 20px;">
+                <div class="col-sm-12" style="padding: 0px 15px;">
+                    <div style="display: block; background: white; height: 280px; width: 100%; padding: 15px 0px">
+
+                    <div class="col-sm-4">
+                        <div class="single-item-header">
+                            <a href="#"><img style="height: 100%;width: 100%"  class="img-fluid" src="/img/product/{{$product[0]['image']}}" alt=""></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-4" style="margin-left: 22%;margin-top: -20px">
-                    <p class="single-item-title" style="letter-spacing: 5px; font-size: medium;color: #31b0d5">{{$product[0]['name']}}</p>
+                    <div class="col-sm-8" >
+                    <p class="single-item-title" style="margin-top: -2px; font-size: large ;color: #31b0d5">{{$product[0]['name']}}</p>
 
                     @for ($i = 0; $i < 5; $i++)
                         @if ($i < $star)
@@ -82,14 +85,17 @@
                     </div>
                     <div class="caption" style="margin-top: 30px;margin-left: 0px">
                         <a class="shopping shop"  href="{{route('cart',$product[0]['id'])}}"><i class="fas fa-cart-plus"></i></a>
-                        <a class="shopping" href="{{route('don_hang')}}" style="letter-spacing: 2px"><i class="fas fa-mouse-pointer"></i>Thanh toán</a>
+                        <a class="shopping pay" href="{{route('don_hang')}}" style="letter-spacing: 2px"><i class="fas fa-mouse-pointer"></i>Thanh toán</a>
 
                     </div>
 
                 </div>
-                <div class="col-sm-12" style="top: 45px; padding-top: 15px; padding-bottom: 15px; height: 100%;background-color: whitesmoke;">
-                    <div style="height: 35px;margin-left: 10%;margin-top:-20px ">
-                        <p style="display: inline-block; font-size: large; margin-top: 12px">NHẬN XÉT</p>
+                    </div>
+
+            </div>
+                <div class="col-sm-12" style="top: 45px; padding-top: 15px; padding-bottom: 15px; background-color: whitesmoke;">
+                    <div style="height: 35px;">
+                        <p style="display: inline-block; font-size: large; margin-top: 6px">NHẬN XÉT</p>
                         @if ($auth_rate != null)
                             <button class="btn btn-primary" style="float: right; " onclick="showHideForm()">Viết đánh giá</button>
                         @endif
@@ -119,7 +125,7 @@
                     @endif
                     <br>
 
-                    <div id="customer-rates" style="display: block; padding: 0px 15px 0px 15px; alignment: center; background: white;margin-left: 10%">
+                    <div id="customer-rates" style="display: block; padding: 0px 15px 0px 15px; alignment: center; background: white;">
                         @for ($j = 0; $j < count($rates); $j++)
                             <div style="border-bottom: .1rem dashed lightgray; padding: 15px 0px 5px 0px; display:{{$j < 5 ? "block" : "none"}}">
                                 <p style="display: inline; word-wrap:break-word; color: dodgerblue; font-weight: bold">{{$rates[$j]->customer_name}}: </p>
