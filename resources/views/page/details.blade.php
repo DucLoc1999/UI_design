@@ -51,7 +51,7 @@
                     </div>
                 </ul>
             </div>
-            <div class="col-sm-8" style="background-color: whitesmoke;padding: 45px; ">
+            <div class="col-sm-8 detail" style="background-color: whitesmoke;padding: 45px; ">
                 <div class="col-sm-4" style="margin-top: -20px;margin-left: 10%">
                     <div class="single-item-header">
                         <a href="#"><img style="height: 300px;width: 400px"  class="img-fluid" src="/img/product/{{$product[0]['image']}}" alt=""></a>

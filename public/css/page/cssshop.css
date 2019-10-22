@@ -1,7 +1,11 @@
 *{
 
 }
-
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+    z-index: 0;
+    padding: 6.5px;
+    margin-left: 0px;
+}
 nav{
     padding: 23px;
     background: linear-gradient(90deg, rgb(0, 62, 82) 50%, rgb(13, 109, 133) 87%, rgb(26, 156, 183) 100%);
@@ -183,9 +187,9 @@ a:active {
 }
 .single-item {
     background: white;
-    height: auto;
+    height: 390px;
     max-width: 270px;
-    padding-top: 10px;
+    padding-top: 1px;
 }
 .row {
     width: 1200px;
@@ -199,6 +203,6 @@ a:active {
     margin-left: 10px;
 }
 .caption{
-    margin-left: 150px;
-    margin-bottom: 20px;
+    margin-left: 9px;
+    margin-top: 20px !important;
 }

@@ -131,7 +131,7 @@
                     </div>
                 @else
                         <li style="width: 120px"><a href="{{route('reguser')}}" target="_parent"><span class="glyphicon glyphicon-user"></span>Đăng ký</a></li>
-                        <li style="border: solid #d5d5d5 ;height: 35px; margin-top: 10px; margin-left: 5px;margin-right: 0px"></li>
+                        <!--<li style="border: solid #d5d5d5 ;height: 35px; margin-top: 10px; margin-left: 5px;margin-right: 0px"></li>-->
                         <li style="width: 150px"><a href="{{route('login')}}" target="_parent"><span class="glyphicon glyphicon-log-in"></span>Đăng nhập</a></li>
                 @endif
 

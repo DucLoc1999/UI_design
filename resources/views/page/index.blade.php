@@ -57,7 +57,7 @@
 
         <div class="row">
             <div style="padding-left: 15px">
-                <h3>Sản phẩm mới</h3>
+                <h3 style="color: red">Sản phẩm mới</h3>
                 <p>Có {{count($product)}} sản phẩm</p>
             </div>
             @foreach($product as $pro)
@@ -105,7 +105,7 @@
         </div>
         <div class="row" >
             <div style="padding-left: 15px">
-                <h3>Sản phẩm khuyến mãi</h3>
+                <h3 style="color: red">Sản phẩm khuyến mãi</h3>
                 <p>Có {{count($spkm)}} sản phẩm</p>
             </div>
             @foreach($spkm as $sp)
