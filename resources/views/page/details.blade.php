@@ -16,7 +16,7 @@
                 <ul class="list-group" style="">
                     @foreach($type_product as $sp)
                         @if($sp->id != $product[0]['id'])
-                            <li  class="list-group-item" style="background-color: white; height: 110px">
+                            <li  class="list-group-item" style="background-color: white; height: 125px">
 
                                 <div class="single-item-header" style="height: 80px; width: 80px; display: inline-block; float: left;margin-top: 7px">
                                     <a href="{{route('details',[$sp->id_type,$sp->id])}}">

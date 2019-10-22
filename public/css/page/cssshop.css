@@ -206,3 +206,7 @@ a:active {
     margin-left: 9px;
     margin-top: 20px !important;
 }
+element.style {
+    background-color: white;
+    height: 125px;
+}
